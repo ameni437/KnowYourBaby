@@ -1,0 +1,120 @@
+
+footer{
+    background-color: rgba(85, 128, 188, 0.429);
+    background-image: linear-gradient(80deg, rgba(85, 128, 188, 0.429) 0%, #fafafa 100%);
+    margin-top: 0%;
+}
+footer img.footerlogo{
+    width: 200px;
+    height: 80px;
+    margin: 15px 40px;
+    border-color: var(--main-color);
+    border-style: outset;
+    border-radius: 10px;
+  }
+  footer p{
+    font-size :17px;
+    margin-left: 40px;
+    margin-right: 60px;
+  
+  }
+  footer .footer-contact{
+    display: flex;
+  
+  }
+  footer .footer-contact .footer-icon{
+    margin: 5px 20px 0px 20px;
+    width:40px;
+    height: 40px;
+    background-color:var(--sec-color) ;
+    line-height: 40px;
+    border: 1px solid var(--sec-color);
+    box-sizing: border-box;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  
+  }
+  footer .footer-contact .footer-icon svg{
+    color:aliceblue;
+    text-align: center;
+    padding-left : 10px
+  
+  }
+  
+  footer .footer-contact h6{
+    color: var(--sec-color);
+    margin-bottom: 7px;
+    font-size: 16px;
+  
+  }
+  footer .footer-contact h4{
+    color: var(--btn-color);
+    font-size: 18px;
+    margin-top:10px;
+  }
+   footer h2{
+    color:var(--main-color);
+    font-size: 30px;
+    margin:15px ;
+  
+   }
+   footer ul{
+    margin-top:25px;
+   }
+   footer ul li{
+    margin-top: 10px;
+   }
+   footer ul li a{
+    color: rgba(92, 92, 92, 0.732);
+    font-size:16px;
+    letter-spacing:1px;
+   }
+   footer form{
+    margin: 0px;
+   }
+   footer form input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0px;
+    width :100%;
+  
+   }
+   footer form button{
+     width :100%;
+     border-radius: 5px;
+     color: aliceblue;
+   }
+   footer ul.social li{
+    display: inline-block;
+    margin-right: 20px ;
+   }
+  
+   p{
+    line-height: 28px;
+    font-family: 'Dancing Script', cursive;
+   
+  }
+  input{
+    box-sizing:border-box;
+    border :1px;
+    text-align: left ;
+    padding: 5px 15px;
+    color : #333;
+    font-size: 16px;
+    font-family: 'Dancing Script';
+  }
+   
+  :root{
+    --main-color : #1F2278 ;
+    --sec-color : #cd73a7; 
+    --btn-color : #4e54c7 ;
+  }
+
+  section,footer ,header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    max-width:100%;
+    padding :25px 0px;
+    margin-top : 50px;
+  }

@@ -1,0 +1,130 @@
+
+
+.me-auto{
+  background-color: rgb(254, 254, 254);
+}
+
+
+
+nav .hana a{
+  color:var(--main-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 17px;
+  transition: .3s ease all;
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 100px;
+  height: 40px;
+}
+nav .hana a:hover {
+  color:var(--sec-color) !important;
+
+}
+
+
+nav .hana .active1
+{    margin-left: 100px;
+} 
+
+.hana .dropdown-menu{
+  border: 1px solid aliceblue;
+  width: 400px;
+      
+}
+.hana .dropdown-menu a{
+  color: rgb(67, 73, 80);
+  font-size: 14px;
+  line-height:30px !important;
+  position :relative;
+  transition: .3s ease all;
+}
+.hana .dropdown-menu li::before{
+ position: absolute; 
+ content:"" ;
+ bottom: 0;
+ left:0;
+ width: 10px;
+ height: 4px;
+ background-color: var(--main-color);
+ color: var(--main-color);
+}
+.hana .dropdown-menu a:hover{
+  color: var(--btn-color) !important;}
+
+  [type=button]:not(:disabled),[type=reset]:not(:disabled), [type=submit]:not(:disabled) ,button:not(:disabled){ 
+      cursor: pointer;
+      background-color: var(--btn-color);
+      border: 1px solid var(--btn-color);
+      
+  }
+
+
+
+nav .hana button{
+  background-color: var(--btn-color);
+  border:1px solid var(--btn-color);
+  width : 270px;
+  height: 50px;
+  color :aliceblue;
+  text-transform: uppercase;
+  margin-top: -23px !important ;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease-in-out;
+  margin-left: 10px;
+ 
+
+}
+
+nav .hana button span{
+  background-color: aliceblue;
+  color: var(--btn-color);
+  width: 40px;
+  border-radius: 4px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 15px;
+  }
+nav .hana button span{
+    background-color: aliceblue;
+    color: var(--btn-color);
+    width: 40px;
+    border-radius: 4px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 15px;
+    }
+
+@media only screen and (max-width : 992px)
+{
+  nav .hana .dropdown-menu {width:100% ;}
+  nav .hana button{
+      margin-top: 0px;
+
+  }
+}
+
+nav .hana svg.phone{
+margin-right: 10px;
+}
+:root{
+  --main-color : #1F2278 ;
+  --sec-color : #cd73a7; 
+  --btn-color : #4e54c7 ;
+}
+
+section,footer ,header {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  max-width:100%;
+  padding :25px 0px;
+  margin-top : 50px;
+}
+
+
