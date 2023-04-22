@@ -82,37 +82,48 @@
     align-items: center!important;
 }
 
-.doc-area ul  .doc-thumb1{
+
+
+.fleur {
+    position: relative;
+    width: 500px; /* Largeur de la zone contenant la fleur */
+    height: 500px; /* Hauteur de la zone contenant la fleur */
+  }
+  
+  .fleur img {
+    position: absolute;
+    top: 50%; /* Centrer l'image horizontalement */
+    left: 50%; /* Centrer l'image verticalement */
+    width: 100px; /* Largeur de chaque image */
+    height: 100px; /* Hauteur de chaque image */
+    transform-origin: 0 0; /* Changer l'origine de la transformation à l'angle supérieur gauche */
+  }
+  
+  .fleur img:nth-child(1) {
     border-radius: 60px 0px 60px 60px ;
     width: 200px;
     height: 150px;
-    margin-left: -1120px;
-    margin-top: -260px;
+    margin-left: -220px;
+    margin-top: -230px;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 13%);
-    flex-direction:column-reverse ;
-
-
-
-}
-.doc-area ul  .doc-thumb2{
+    flex-direction:column-reverse ;  }
+  
+  .fleur img:nth-child(2) {
     border-radius: 0 60px 60px 60px;
     width: 150px;
     height: 150px;
-    margin-top: 0px;
-    margin-left: -750px;
-    box-shadow: 0 0 10px 0 rgb(0 0 0 / 13%);
-
-
-}
-.doc-area ul .doc-thumb3{
+    margin-top: -230px;
+    margin-left: 0px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 13%);  }
+  
+  .fleur img:nth-child(3) {
     border-radius:60px 60px 60px 0  ;
     width: 200px;
     height: 150px;
-    margin-top: -520px;
-    margin-right: 700px;
-    box-shadow: 0 0 10px 0 rgb(0 0 0 / 13%);
-
-}
+    margin-top: -400px;
+    margin-right: 0px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 13%);  }
+  
 .doc .doc-thumb4{
     padding-top: 14% ;
     height: 40%;  
@@ -125,25 +136,23 @@ a{
 
 .doc .exp-bx {
     font-family: 'Dancing Script', cursive;
-    font-size: 30px;
+    font-size: 26px;
     border: 2px solid ;
     background-color: #e6e7ff;
     border-radius: 60px 60px 0 60px;
     border-top: #fafafa;
     border-left: #fafafa;
-    padding: 60px 0 30px;
+    padding: 20px 0 30px;
     text-align: center;
     line-height: 40px;
-    font-weight: 800;
     color: #565acf;
     z-index: 2;
     width: 220px;
     height: 200px;
     text-indent : 10%;
-    margin-top: -390px;
+    margin-top: -345px;
     margin-left: 00px;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 13%);
-
   
 
 }
@@ -205,10 +214,7 @@ span{
     display :block;
   }
   
-  ul{
-    margin:0;
-    padding:0;
-  }
+
   
   li{
     list-style-type: none;

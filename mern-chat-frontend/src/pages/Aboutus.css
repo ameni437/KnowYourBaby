@@ -75,11 +75,11 @@ a{
     color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity))!important;
 }
 .heading-bx p{
-    font-size: 24px;
+    font-size: 20px !important;
     margin-top: 90px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 40px;
+    padding-top: 38px !important;
     background-color: aliceblue;
     color:var(--main-color);
     border-radius: 60px;

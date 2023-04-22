@@ -77,13 +77,10 @@ footer img.footerlogo{
     border-radius: 5px;
     margin: 10px 0px;
     width :100%;
+    background-color: aliceblue;
   
    }
-   footer form button{
-     width :100%;
-     border-radius: 5px;
-     color: aliceblue;
-   }
+   
    footer ul.social li{
     display: inline-block;
     margin-right: 20px ;
@@ -117,4 +114,13 @@ footer img.footerlogo{
     max-width:100%;
     padding :25px 0px;
     margin-top : 50px;
+  }
+  .btn3{
+    width :100% !important;
+    border-radius: 5px !important;
+    border: 1px solid #ccc;
+    color: #b8b9cc;
+    background-color: aliceblue;
+
+
   }
