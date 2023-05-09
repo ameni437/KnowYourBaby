@@ -31,30 +31,30 @@ function Login() {
         <Container>
            
             <Row>
-                <Col md={7} className="login__bg"></Col>
+                <Col md={7} className="login__bg2"></Col>
                 
                 <Col md={5} className="d-flex align-items-center justify-content-center flex-direction-column">
                     
                     <Form style={{ width: "80%", maxWidth: '500px' }} onSubmit={handleLogin}>
                         <div className="name1">
-                    <h2 className="titre">Hello Again</h2>
+                    <h2 className="titreA">Bonjour</h2>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             {error && <p className="alert alert-danger">{error.data}</p>}
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" onChange={(e) => setEmail(e.target.value)} value={email} required />
-                            <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
+                            <Form.Label>Adresse e-mail</Form.Label>
+                            <Form.Control type="email" placeholder="Adresse e-mail" onChange={(e) => setEmail(e.target.value)} value={email} required />
+                            <Form.Text className="text-muted">Nous ne partagerons jamais votre e-mail avec quelqu'un d'autre.</Form.Text>
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password} required />
+                            <Form.Label>Mot de passe</Form.Label>
+                            <Form.Control type="password" placeholder="Mot de passe" onChange={(e) => setPassword(e.target.value)} value={password} required />
                         </Form.Group>
                         <Button className="custom-btnn btn-2" style={{width:"100%", borderColor:"#F4C2C2"}} type="submit">
-                            {isLoading ? <Spinner animation="grow" /> : "Login"}
+                            {isLoading ? <Spinner animation="grow" /> : "Connexion"}
                         </Button>
                         <div className="py-4">
                             <p className="text-center" >
-                                Don't have an account ? <Link to="/signup"><b className="colorer">Signup</b></Link>
+                            Vous n'avez pas de compte ? <Link to="/signup"><b className="colorer">Signup</b></Link>
                             </p>
                         </div>
                         </div>

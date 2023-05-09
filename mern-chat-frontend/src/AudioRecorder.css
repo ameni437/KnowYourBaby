@@ -1,0 +1,125 @@
+.record_btn {
+    margin-top: 50px;
+    width: 140px;
+    height: 140px;
+    font-size: 16px;
+    color: var(--btn-color);
+    background: none;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    transition: 0.15s linear;
+}
+
+.record_btn:hover {
+    transition: 0.15s linear;
+    transform: scale( 1.05 );
+}
+
+.record_btn:active {
+    background: #e6e7ff;
+}
+
+
+.record_btn[disabled] {
+    border: 2px solid #ccc;
+}
+
+.record_btn[disabled]:after {
+    content: '\E02B';
+    color: #ccc;
+}
+
+.record_btn[disabled]:hover {
+    transition: 0.15s linear;
+    transform: none;
+}
+
+.record_btn[disabled]:active {
+    background: none;
+}
+
+.record2_btn {
+    margin-top: 50px;
+    width: 140px;
+    height: 140px;
+    font-size: 16px;
+    color: var(--main-color);
+    background: none;
+    border: 2px solid var(--btn-color);
+    border-radius: 50%;
+    transition: 0.15s linear;
+}
+
+.record2_btn:hover {
+    transition: 0.15s linear;
+    transform: scale( 1.05 );
+}
+
+.record2_btn:active {
+    background: #e6e7ff;
+}
+
+
+.record2_btn[disabled] {
+    border: 2px solid #ccc;
+}
+
+.record2_btn[disabled]:after {
+    content: '\E02B';
+    color: #ccc;
+}
+
+.record2_btn[disabled]:hover {
+    transition: 0.15s linear;
+    transform: none;
+}
+
+.record2_btn[disabled]:active {
+    background: none;
+}
+
+.audio-player{
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.download{
+    font-size: 10px;
+    color: var(--btn-color);
+}
+
+.btn-extern{
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.329);
+
+    border: 1px solid rgb(62 28 131 / 10%);
+    padding: 35px;
+
+    transition: 0.5s;
+    margin-bottom: 50px;
+    font-size: 22px;
+    color: var(--main-color);
+
+}
+.btn-predict{
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.329);
+
+    border: 1px solid rgb(62 28 131 / 10%);
+    padding: 20px;
+
+    transition: 0.5s;
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: var(--main-color);
+
+    margin-left: -60px;
+
+
+
+}
+.result{
+    font-size: 30px;
+    margin-top: 30px;
+}

@@ -4,11 +4,12 @@
 
 .home__bg{
     background-image: url('../assets/background.jpg');
-    height: 92vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
+    height: 92vh !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    overflow-x: hidden !important;
+    border-radius: 80px;
 }
 
 .home-message-icon{

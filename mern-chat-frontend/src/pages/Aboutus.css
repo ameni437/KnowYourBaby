@@ -13,6 +13,7 @@
     position: relative;
     text-align: center;
 
+
 }
 
 .about-area {
@@ -49,7 +50,7 @@ a{
 
 .about-area .exp-bx {
     font-family: 'Dancing Script', cursive;
-    font-size: 50px;
+    font-size: 35px  !important;
     border: 2px solid ;
     background-color: #e6e7ff;
     border-radius: 60px 60px 0 60px;

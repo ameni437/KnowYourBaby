@@ -25,13 +25,18 @@ function Navigation() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         {!user && (
+
                             <LinkContainer to="/login">
-                                <Nav.Link ><b>Login</b></Nav.Link>
+                                <Nav.Link ><b>Connexion</b></Nav.Link>
                             </LinkContainer>
                         )}
                         <LinkContainer to="/chat">
-                            <Nav.Link><b>Chat</b></Nav.Link>
+                            <Nav.Link><b>Discuter</b></Nav.Link>
                         </LinkContainer>
+                        <LinkContainer to="/">
+                            <Nav.Link><b>Acceuil</b></Nav.Link>
+                        </LinkContainer>
+
                         {user && (
                             <NavDropdown
                                 title={
@@ -43,12 +48,12 @@ function Navigation() {
                                 id="basic-nav-dropdown"
                             >
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Une autre action</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Quelque chose</NavDropdown.Item>
 
                                 <NavDropdown.Item>
                                     <Button variant="danger" onClick={handleLogout}>
-                                        Logout
+                                    Se déconnecter
                                     </Button>
                                 </NavDropdown.Item>
                             </NavDropdown>

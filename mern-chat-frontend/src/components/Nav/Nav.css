@@ -6,8 +6,10 @@
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  font-size: "medium";  
+  font-size: "medium";
+  z-index: 1000;
 
+  
 }
 .cont{
   background-color: rgb(255, 255, 255) !important;
@@ -112,4 +114,9 @@ nav .boutonBasculement button span{
       
 
   }
+}
+
+.me-auto{
+  z-index: 1000;
+
 }

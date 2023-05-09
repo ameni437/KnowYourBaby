@@ -47,11 +47,10 @@ const Footer = () =>{
                 <div className="col-md-3 col-sm-6">
                 <h2>NOS SERVICES</h2>
                     <ul>
-                        <li><a href="#">AAAAA</a></li>
-                            <li>  <a href="#">BBBBB</a></li>
-                            <li>  <a href="#">CCCC</a></li>
-                            <li>   <a href="#">DDDDD</a></li>
-                            <li>  <a href="#">EEEEE</a> </li>
+                        <li><a href="/serv">enregistreur audio</a></li>
+                            <li>  <a href="/servdet">Plus de détails</a></li>
+                            <li>  <a href="/pediatre">Trouver un pédiatre</a></li>
+                            <li>   <a href="/contact">Contactez-nous par e-mail</a></li>
                     </ul>
                 </div>
                 <div className="col-md-3 col-sm-6">

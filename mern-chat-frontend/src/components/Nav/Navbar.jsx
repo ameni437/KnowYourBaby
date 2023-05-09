@@ -22,7 +22,7 @@ const Navbars = () => {
         <Navbar.Collapse id="basic-navbar-nav" className="boutonBasculement">
 
           <Nav className="me-auto">
-            <Link to="/" className="active1">Home</Link>
+            <Link to="/" className="active1">Acceuil</Link>
             <Link to="/contact" className="active3">Contactez-nous</Link>
 
             <NavDropdown
@@ -40,13 +40,29 @@ const Navbars = () => {
             </NavDropdown>
 
             <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Service</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Service détaillé</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">
+              <Link to="/Serv">
+                Service
+                </Link>
+                </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">
+                <Link to="/Servdet">
+                Service détaillé
+                </Link>
+                </NavDropdown.Item>
+                
             </NavDropdown>
 
-            <NavDropdown title="Blog" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Blog détaillé</NavDropdown.Item>
+            <NavDropdown title="recherche" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">
+              <Link to="/Pediatre">
+                Trouvez pédiatre
+
+
+                </Link>
+
+                 </NavDropdown.Item>
+
             </NavDropdown>
 
             <LinkContainer to="/acc">

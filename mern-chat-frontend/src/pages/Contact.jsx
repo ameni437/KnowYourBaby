@@ -33,7 +33,7 @@ const Contact =()=> {
                               <textarea placeholder="Message">
                                 </textarea>  
                             </div>
-                            <button className="but">Submit</button>
+                            <button className="but">Soumettre</button>
                         </form>
                     </div>
                     <div className="col-lg-4 col-md-4">

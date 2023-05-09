@@ -4,7 +4,7 @@ import { useSignupUserMutation } from "../services/appApi";
 import { Link, useNavigate } from "react-router-dom";
 import "./Signup.css";
 import botImg from "../assets/robot.jpg";
-import mom from "../assets/mom.mp4"
+import mom from "../assets/mom.mp4";
 import Navigation from "../components/Navigation";
 
 function Signup() {
@@ -66,85 +66,91 @@ function Signup() {
 
   return (
     <div>
-      <Navigation/>
-    <Container>
-      <Row>
-        <Col
-          md={6}
-          className="d-flex align-items-center justify-content-center flex-direction-column"
-        >
-          <Form style={{ width: "80%", maxWidth: 500 }} onSubmit={handleSignup}>
-            <div className="name1">
-            <h1 className="text-center" style={{ color: "#F4C2C2" }}>
-              Create Account
-            </h1>
-            <div className="signup-profile-pic__container">
-              <img
-                src={imagePreview || botImg}
-                className="signup-profile-pic"
-              />
-              <label htmlFor="image-upload" className="image-upload-label">
-                <i className="fas fa-plus-circle add-picture-icon"></i>
-              </label>
-              <input
-                type="file"
-                id="image-upload"
-                hidden
-                accept="image/png, image/jpeg"
-                onChange={validateImg}
-              />
-            </div>
-            {error && <p className="alert alert-danger">{error.data}</p>}
-            <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Your name"
-                onChange={(e) => setName(e.target.value)}
-                value={name}
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Enter email"
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-              />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
+      <Navigation />
+      <Container>
+        <Row>
+          <Col
+            md={6}
+            className="d-flex align-items-center justify-content-center flex-direction-column"
+          >
+            <Form
+              style={{ width: "80%", maxWidth: 500 }}
+              onSubmit={handleSignup}
+            >
+              <div className="name1">
+                <h1 className="text-center" style={{ color: "#F4C2C2" }}>
+                  Créer un compte
+                </h1>
+                <div className="signup-profile-pic__container">
+                  <img
+                    src={imagePreview || botImg}
+                    className="signup-profile-pic"
+                  />
+                  <label htmlFor="image-upload" className="image-upload-label">
+                    <i className="fas fa-plus-circle add-picture-icon"></i>
+                  </label>
+                  <input
+                    type="file"
+                    id="image-upload"
+                    hidden
+                    accept="image/png, image/jpeg"
+                    onChange={validateImg}
+                  />
+                </div>
+                {error && <p className="alert alert-danger">{error.data}</p>}
+                <Form.Group className="mb-3" controlId="formBasicName">
+                  <Form.Label>Nom</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Votre nom"
+                    onChange={(e) => setName(e.target.value)}
+                    value={name}
+                  />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Label>Adresse e-mail</Form.Label>
+                  <Form.Control
+                    type="email"
+                    placeholder="Adresse e-mail"
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                  />
+                  <Form.Text className="text-muted2">
+                    Nous ne partagerons jamais votre e-mail avec quelqu'un
+                    d'autre{" "}
+                  </Form.Text>
+                </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Password"
-                onChange={(e) => setPassword(e.target.value)}
-                value={password}
-              />
-            </Form.Group>
-            <Button className="custom-btnn btn-2" style={{width:"100%", borderColor:"#F4C2C2"}} type="submit">
-              {upladingImg || isLoading ? "Signing you up..." : "Signup"}
-            </Button>
-            <div className="py-4">
-              <p className="text-center">
-                Already have an account ?{" "}
-                <Link to="/login">
-                  <b className="colorer">Login</b>
-                </Link>
-              </p>
-            </div>
-            </div>
-          </Form>
-        </Col>
-        <Col md={6} className="signup__bg">
-          
-        </Col>
-      </Row>
-    </Container>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                  <Form.Label>Mot de passe</Form.Label>
+                  <Form.Control
+                    type="password"
+                    placeholder="Mot de passe"
+                    onChange={(e) => setPassword(e.target.value)}
+                    value={password}
+                  />
+                </Form.Group>
+                <Button
+                  className="custom-btnn btn-2"
+                  style={{ width: "100%", borderColor: "#F4C2C2" }}
+                  type="submit"
+                >
+                  {upladingImg || isLoading ? "Signing you up..." : "S'inscrire"}
+                </Button>
+                <div className="py-4">
+                  <p className="text-center">
+                    Vous avez déjà un compte ?{" "}
+                    <Link to="/login">
+                      <b className="colorer">Connexion</b>
+                    </Link>
+                  </p>
+                </div>
+              </div>
+            </Form>
+          </Col>
+          <Col md={6} className="signup__bg"></Col>
+        </Row>
+      </Container>
     </div>
   );
 }

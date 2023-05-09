@@ -94,3 +94,16 @@ section,footer ,header {
   padding :25px 0px;
   margin-top : 50px;
 }
+.Theme{
+  position:relative;
+    font-family: 'Pacifico', cursive;
+    text-decoration:underline;
+    color: #fff;
+    background-color: var(--btn-color);
+    border-radius: 10px;
+
+    margin-left:50px ;
+    padding-left: 15px;
+
+    width: 400px;
+}

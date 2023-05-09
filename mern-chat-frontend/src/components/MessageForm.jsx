@@ -54,17 +54,17 @@ function MessageForm() {
         <>
         
             <div className="messages-output">
-                {user && !privateMemberMsg?._id && <div className="alert alert-info">You are in the {currentRoom} room</div>}
+                {user && !privateMemberMsg?._id && <div className="alert alert-info">Vous êtes dans la {currentRoom} chambre</div>}
                 {user && privateMemberMsg?._id && (
                     <>
                         <div className="alert alert-info conversation-info">
                             <div>
-                                Your conversation with {privateMemberMsg.name} <img src={privateMemberMsg.picture} className="conversation-profile-pic" />
+                            Votre conversation avec{privateMemberMsg.name} <img src={privateMemberMsg.picture} className="conversation-profile-pic" />
                             </div>
                         </div>
                     </>
                 )}
-                {!user && <div className="alert alert-danger">Please login</div>}
+                {!user && <div className="alert alert-danger">Veuillez vous connecter</div>}
 
                 {user &&
                     messages.map(({ _id: date, messagesByDate }, idx) => (
@@ -90,7 +90,7 @@ function MessageForm() {
                 <Row>
                     <Col md={11}>
                         <Form.Group>
-                            <Form.Control type="text" placeholder="Your message" disabled={!user} value={message} onChange={(e) => setMessage(e.target.value)}></Form.Control>
+                            <Form.Control className="V-M" type="text" placeholder="Votre message" disabled={!user} value={message} onChange={(e) => setMessage(e.target.value)}></Form.Control>
                         </Form.Group>
                     </Col>
                     <Col md={1}>

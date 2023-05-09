@@ -66,7 +66,7 @@ function Sidebar() {
     }
     return (
         <>
-            <h2 className="name2">Available rooms</h2>
+            <h2 className="name2">Groupes disponibles</h2>
             <ListGroup>
                 {rooms.map((room, idx) => (
                     <ListGroup.Item key={idx} onClick={() => joinRoom(room)} active={room == currentRoom} style={{ cursor: "pointer", display: "flex", justifyContent: "space-between" }}>
@@ -74,7 +74,7 @@ function Sidebar() {
                     </ListGroup.Item>
                 ))}
             </ListGroup>
-            <h2 className="name2">Members</h2>
+            <h2 className="name2">Membres</h2>
             <ListGroup>
             {members.map((member) => (
                 <ListGroup.Item key={member.id} style={{ cursor: "pointer" }} active={privateMemberMsg?._id == member?._id} onClick={() => handlePrivateMemberMsg(member)} disabled={member._id === user._id}>

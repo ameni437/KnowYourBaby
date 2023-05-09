@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navigation from "./components/Navigation";
 import Layout from './components/Layout/Layout'; 
 import Acceuil from "./pages/Acceuil";
 import Login from "./pages/Login";
@@ -14,6 +13,14 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Aboutus from "./pages/AboutUs";
 import Doc from "./pages/Doc";
+import Serv from "./pages/Serv";
+import ServDet from "./pages/ServDet";
+import Benarous from "./Zones/Benarous";
+import Ariana from "./Zones/Ariana";
+import Tunis from "./Zones/Tunis";
+import Pediatre from "./pages/pediatre";
+
+
 
 function App() {
     const [rooms, setRooms] = useState([]);
@@ -33,6 +40,18 @@ function App() {
                 <Route path="/contact" element={<Contact/>} />
                 <Route path="/aboutUs" element={<Aboutus />} />
                 <Route path="/doc" element={<Doc/>} />
+                <Route path="/serv" element={<Serv/>} />
+                <Route path="/servdet" element={<ServDet/>} />
+               
+                <Route path="/tunis" element={<Tunis/>} />
+                <Route path="/ariana" element={<Ariana/>} />
+                <Route path="/benarous" element={<Benarous/>} />
+                
+
+                <Route path="/pediatre" element={<Pediatre/>} />
+
+
+
 
 
 

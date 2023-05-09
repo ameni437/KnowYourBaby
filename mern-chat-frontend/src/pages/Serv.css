@@ -1,0 +1,42 @@
+.tt-page{
+    
+        background-image: linear-gradient(160deg, rgba(85, 128, 188, 0.429) 0%, #fafafa 100%) !important;
+        flex-wrap: wrap;
+        list-style-position: outside;
+        list-style-type: disc;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        text-align: center;
+    
+    
+}
+
+
+.header-box img{
+    margin-left: 100px;
+    max-width: 60%;
+    width:650px !important ;
+    height: auto;
+    animation: mover 1s infinite alternate;
+    transition: .3s ease all;
+    margin-top: 70px;
+}
+.homepage-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #565acf;
+    padding-top: 15px;
+
+    border: 2px solid ;
+    background-color: #e6e7ff;
+    border-radius: 60px 60px 0 60px;
+    border-top: #fafafa;
+    border-left: #fafafa;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 13%);
+
+    width: 620px;
+    height: 60px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 50px;
+}

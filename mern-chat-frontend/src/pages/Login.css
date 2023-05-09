@@ -1,10 +1,11 @@
-.login__bg{
+.login__bg2{
     background-image: url('../assets/chatmom.jpg');
-    height: 92vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
+    height: 92vh !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    overflow-x: hidden !important;
+    border-radius: 80px;
 }
 .custom-btnn {
     width: 100px;
@@ -49,12 +50,12 @@
   .colorer{
     color: cornflowerblue;
   }
-  .titre{
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: #F4C2C2;
+  .titreA{
+    margin-bottom: 50px !important;
+    text-align: center !important;
+    font-size: 40px !important;
+    font-weight: bold !important;
+    color: #F4C2C2 !important;
   }
   .name1{
     font-family: 'Montserrat';

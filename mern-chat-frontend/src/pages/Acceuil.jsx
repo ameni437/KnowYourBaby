@@ -21,7 +21,7 @@ function Home() {
                      te soutenir et te conseiller.</p>
                     <LinkContainer to="/chat">
                         <button className="custom-btn btn-1"  >
-                            Get Started <i className="fas fa-comments home-message-icon"></i>
+                        Commencer <i className="fas fa-comments home-message-icon"></i>
                         </button>
                     </LinkContainer>
                 </div>

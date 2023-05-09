@@ -1,8 +1,9 @@
 import React from "react";
-import { Navbar } from "react-bootstrap";
 import headerimg from '../assets/d.png';
 import img1 from '../assets/image.png';
 import './Home.css';
+import { Navbar } from "react-bootstrap";
+
 
 const Home =()=>{
     return(
@@ -36,7 +37,8 @@ const Home =()=>{
                     </div>
                 </div>
             </div>
-         </div>   
+         </div>  
+ 
          </div>
        
     )

@@ -16,8 +16,9 @@ const Banner =(props)=>{
                         
                     </h2>
                     <li>
-                        <Link to="/home">
-                        <FontAwesomeIcon icon={faHome}/> home
+                    
+                        <Link to="/">
+                        <FontAwesomeIcon icon={faHome}/> Acceuil
                         </Link>
                         / {props.smtitle}
                     </li>
